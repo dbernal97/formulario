@@ -1,0 +1,115 @@
+@import "node_modules/@bbva-web-components/bbva-foundations-sass/main";
+
+:host {
+  display: block;
+  box-sizing: border-box;
+}
+
+:host([hidden]), [hidden] {
+  display: none !important;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+$gray-color: #666666;
+$card-gray-color: #F4F4F4;
+
+.header{
+  #header-title{
+    background-color: #072146;
+  }
+
+  section{
+    text-align: center;
+  }
+}
+
+.main-container{
+
+  padding: 5px;
+
+  .form-section{
+
+    #num-screen{
+      color: $gray-color;
+      font-style: italic;
+    }
+
+    .form-number{
+      margin: 15px 0;
+    }
+
+    #form-btn{
+      margin:20px;
+    }
+  }
+
+
+  .summary-section{
+
+    background-color: #F4F4F4;
+    padding: 4px;
+
+
+    #number-value{
+      color: #121212;
+      font-size: 20px;
+      font-weight: 500;
+      letter-spacing: 0;
+      line-height: 24px;
+    }
+
+    .summary-title{
+      color: #121212;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0;
+      line-height: 24px;
+    }
+
+    #divider{
+      margin: 20px 0;
+    }
+
+    .info-text{
+      color: #666666;
+      font-size: 12px;
+    }
+
+    .values-table{
+      margin-top: 10px;
+      width: 100%;
+      
+      tr{
+        td{
+          text-align: right;
+        }
+        td:first-child{
+          text-align: left;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 800px){
+  .main-container{
+    display: flex;
+    width: 100%;
+    padding: 0px 100px;
+
+    .form-section{
+      width: 52%;
+    }
+
+    .summary-section{
+      margin-top: 70px;
+      width: 350px;
+      margin-left: 80px; 
+      height: 250px;
+    }
+  }
+}
